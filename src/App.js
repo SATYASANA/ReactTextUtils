@@ -1,10 +1,10 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
-import About from './components/About';
+import Navbar from './Navbar';
+import TextForm from './TextForm';
+import About from "./About"
 import { useState } from 'react';
-import Alert from './components/Alert';
+import Alert from './Alert';
 import {BrowserRouter,
   Routes,
   Route,
