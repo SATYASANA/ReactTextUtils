@@ -5,8 +5,7 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import { useState } from 'react';
 import Alert from './components/Alert';
-import {BrowserRouter as 
-  Router,
+import {HashRouter,
   Routes,
   Route,
   
@@ -65,7 +64,7 @@ const toggleMode=()=>{
   return (
     
   <>
-  <Router>
+  <HashRouter>
   <Navbar title={"TextUtils"} text={text}mode={mode} name={name} toggleMode1={toggleMode1} toggleMode={toggleMode}/>
   <Alert alert={alert}/>
   <div className='container'>
@@ -80,7 +79,7 @@ const toggleMode=()=>{
     
 </Routes>
  </div>
- </Router>
+ </HashRouter>
    </>
   );
 }
