@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 export default function Navbar(props) {
   return (
@@ -13,10 +13,10 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse" id="navbarScroll">
       <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" >
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+          <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">{props.about}</a>
+          <NavLink className="nav-link" to="/about">{props.about}</NavLink>
         </li>
        
       </ul>
