@@ -71,7 +71,7 @@ const toggleMode=()=>{
 
   <div className='container'>
  <Routes>
- <Route exact path='/' element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
+ <Route exact path='/ReactTextUtils' element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
  <Route exact path="/text" element={<TextUtiLs/>}/>
   <Route exact path='/about' element={  <About />}/>
   
