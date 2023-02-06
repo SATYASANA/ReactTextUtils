@@ -70,12 +70,13 @@ const toggleMode=()=>{
   <Alert alert={alert}/>
   <div className='container'>
  <Routes>
-    
+ <Route path="/" element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
+ <Route path="/text" element={<TextUtiLs/>}/>
     
       <Route path='/about' element={  <About />}/>
       
-      <Route path="/" element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
-      <Route path="/text" element={<TextUtiLs/>}/>
+      
+    
       
       
 
