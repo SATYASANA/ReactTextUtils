@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navbar from './Navbar';
+import TextUtiLs from './textUtils';
 import TextForm from './TextForm';
 import About from "./About"
 import { useState } from 'react';
@@ -72,8 +73,9 @@ const toggleMode=()=>{
     
     
       <Route path='/about' element={  <About />}/>
-    
+      <Route path="/text" element={<TextUtiLs/>}/>
       <Route path="/" element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
+      
       
 
     
