@@ -65,25 +65,20 @@ const toggleMode=()=>{
   return (
     
   <>
-  <BrowserRouter>
+   <BrowserRouter>
   <Navbar title={"TextUtils"} text={text}mode={mode} name={name} toggleMode1={toggleMode1} toggleMode={toggleMode}/>
   <Alert alert={alert}/>
+
   <div className='container'>
  <Routes>
- <Route path="/" element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
- <Route path="/text" element={<TextUtiLs/>}/>
-    
-      <Route path='/about' element={  <About />}/>
-      
-      
-    
-      
-      
-
-    
+ <Route exact path='/' element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
+ <Route exact path="/text" element={<TextUtiLs/>}/>
+  <Route exact path='/about' element={  <About />}/>
+  
 </Routes>
  </div>
  </BrowserRouter>
+
    </>
   );
 }
