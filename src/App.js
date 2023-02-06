@@ -73,8 +73,9 @@ const toggleMode=()=>{
     
     
       <Route path='/about' element={  <About />}/>
-      <Route path="/text" element={<TextUtiLs/>}/>
+      
       <Route path="/" element= {<TextForm title={"Enter your text"} mode={mode} heading={"Enter the text to Analyze"} showAlert={showAlert} />}/>
+      <Route path="/text" element={<TextUtiLs/>}/>
       
       
 
